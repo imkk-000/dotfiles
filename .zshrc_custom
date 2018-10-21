@@ -1,0 +1,9 @@
+plugins=(
+  git
+  zsh-autosuggestions
+  zsh-completions
+)
+autoload -U compinit && compinit
+source $ZSH/oh-my-zsh.sh
+
+export PATH=$PATH:$HOME/go/bin:$HOME/.npm-packages/bin
