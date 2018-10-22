@@ -6,4 +6,7 @@ plugins=(
 autoload -U compinit && compinit
 source $ZSH/oh-my-zsh.sh
 
+alias reload="source $HOME/.zshrc"
+alias git="hub"
+
 export PATH=$PATH:$HOME/go/bin:$HOME/.npm-packages/bin
