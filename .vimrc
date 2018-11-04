@@ -8,4 +8,3 @@ set encoding=utf8
 set listchars=eol:$,tab:-<,space:.
 set list
 syntax enable
-
