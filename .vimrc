@@ -1,10 +1,10 @@
 set number
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set t_Co=256
 set autoindent
 set encoding=utf8
-set listchars=eol:$,tab:-<,space:.
+set listchars=eol:$,tab:-<
 set list
 syntax enable

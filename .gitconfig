@@ -1,7 +1,7 @@
 [user]
-	email = nattakit.boonyang@gmail.com
-	name = Nattakit Boonyang
-	signingkey = D9B013E3
+    email = nattakit.boonyang@gmail.com
+    name = Nattakit Boonyang
 [core]
-	editor = vim
-	ignorecase = false
+    editor = vim
+    ignorecase = false
+    autocrlf = false
