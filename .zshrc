@@ -1,7 +1,7 @@
 # load zsh config
-export ZSH="/home/kk/.oh-my-zsh"
-ZSH_THEME="robbyrussell"
-CASE_SENSITIVE="true"
+export ZSH='/home/kk/.oh-my-zsh'
+ZSH_THEME='robbyrussell'
+CASE_SENSITIVE='true'
 plugins=(
     git
     zsh-autosuggestions
@@ -10,8 +10,8 @@ plugins=(
 . $ZSH/oh-my-zsh.sh
 
 # set shortcut
-alias git="hub"
-alias here="basename `pwd`"
+alias git='hub'
+alias here='basename `pwd`'
 
 # set user environment
 export TERM=xterm-256color
