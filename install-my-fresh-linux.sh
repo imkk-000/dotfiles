@@ -69,16 +69,16 @@ sudo apt-get install -y nodejs
 # end install node
 
 # install golang
-wget -qO- https://dl.google.com/go/go$GO_VERSION.linux-amd64.tar.gz | sudo tar -C /opt/ -xvzf -
+wget -qO- https://dl.google.com/go/go$GO_VERSION.linux-amd64.tar.gz | sudo tar -C /opt/ -xzf -
 sudo mv /opt/go /opt/golang
 # end install golang
 
 # create directory
-mkdir -p  $HOME/.icons \
-          $HOME/.themes \
-          $HOME/.local/share/fonts \
-          $HOME/.npm-packages
-          $HOME/.go
-          $HOME/.ssh
-          $HOME/.vim
+mkdir -p $HOME/.icons \
+         $HOME/.themes \
+         $HOME/.local/share/fonts \
+         $HOME/.npm-packages \
+         $HOME/.go \
+         $HOME/.ssh \
+         $HOME/.vim
 # end create directory
