@@ -4,6 +4,7 @@ ZSH_THEME='robbyrussell'
 CASE_SENSITIVE='true'
 plugins=(
     git
+    catimg
     zsh-autosuggestions
     zsh-syntax-highlighting
 )
