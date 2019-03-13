@@ -18,7 +18,5 @@ export TERM=xterm-256color
 export GOPATH=$HOME/.go
 export PATH=/opt/golang/bin:$PATH
 export PATH=$GOPATH/bin:$PATH
-export PATH=/opt/node/bin:$PATH
 export PATH=$HOME/.npm-packages/bin:$PATH
 export PATH=/opt/postman:$PATH
-
