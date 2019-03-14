@@ -78,4 +78,9 @@ mkdir -p $HOME/Documents/linux \
          $HOME/Pictures/Profiles
 
 # copy all config to user directory
-cp .myconfig/.* $HOME/
+cp $PWD/.myconfig/.config/hub $HOME/.config/hub
+cp $PWD/.myconfig/.gitconfig $HOME/.gitconfig
+cp $PWD/.myconfig/.npmrc $HOME/.npmrc
+cp $PWD/.myconfig/.tmux.conf $HOME/.tmux.conf
+cp $PWD/.myconfig/.vimrc $HOME/.vimrc
+cp $PWD/.myconfig/.zshrc $HOME/.zshrc
