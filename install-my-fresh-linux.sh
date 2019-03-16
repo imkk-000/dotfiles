@@ -16,7 +16,7 @@ sudo apt-get install -y wget curl xclip traceroute whois ufw tree \
                         xinput \
                         zsh tmux vim gnome-tweak-tool dconf-editor \
                         gufw gparted htop p7zip-full software-properties-common \
-                        unzip zip nmap transmission vlc gimp
+                        unzip zip nmap
 sudo apt-get install -y $(check-language-support)
 # install vscode
 curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
@@ -84,6 +84,20 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 git clone https://github.com/zsh-users/zsh-autosuggestions $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
+# install font firacode
+FONT_PATH=$HOME/.local/share/fonts
+for FontType in Bold Light Medium Regular Retina; do
+  wget -O $FONT_PATH/FiraCode-$FontType.ttf \
+    "https://github.com/tonsky/FiraCode/blob/master/distr/ttf/FiraCode-$FontType.ttf?raw=true"
+done
+# install font roboto
+wget -cL -O /tmp/roboto.zip "https://fonts.google.com/download?family=Roboto" && \
+unzip /tmp/roboto.zip -d $FONT_PATH && \
+rm /tmp/roboto.zip
+
+fc-cache -f $FONT_PATH
+rm -r $FONT_PATH/*.txt
+
 # copy all config to user directory
 cp $PWD/.myconfig/.config/hub $HOME/.config/hub
 cp $PWD/.myconfig/.gitconfig $HOME/.gitconfig
@@ -91,3 +105,6 @@ cp $PWD/.myconfig/.npmrc $HOME/.npmrc
 cp $PWD/.myconfig/.tmux.conf $HOME/.tmux.conf
 cp $PWD/.myconfig/.vimrc $HOME/.vimrc
 cp $PWD/.myconfig/.zshrc $HOME/.zshrc
+
+# load gnome settings
+sh gsettings.sh
