@@ -18,6 +18,7 @@ sudo apt-get install -y wget curl xclip traceroute whois ufw tree \
                         gufw gparted htop p7zip-full software-properties-common \
                         unzip zip nmap
 sudo apt-get install -y $(check-language-support)
+
 # install vscode
 curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" \
@@ -67,6 +68,7 @@ sudo mv /opt/go /opt/golang
 mkdir -p $HOME/.icons \
          $HOME/.themes \
          $HOME/.local/share/fonts \
+         $HOME/.local/gnome-shell/extensions \
          $HOME/.npm-packages \
          $HOME/.go \
          $HOME/.ssh \
