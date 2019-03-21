@@ -13,7 +13,7 @@ sudo apt-get install -y git-core
 sudo apt-get install -y gcc g++ python make cmake autoconf python-pip
 sudo apt-get install -y wget curl xclip traceroute whois ufw tree \
                         net-tools dirmngr apt-transport-https ca-certificates \
-                        xinput \
+                        xinput network-manager-openvpn-gnome \
                         zsh tmux vim gnome-tweak-tool dconf-editor \
                         gufw gparted htop p7zip-full software-properties-common \
                         unzip zip nmap
