@@ -1,6 +1,6 @@
 # version
 NODE_VERSION=10
-GO_VERSION=1.12
+GO_VERSION=1.12.2
 
 # enable sudo
 sudo whoami >> /dev/null
