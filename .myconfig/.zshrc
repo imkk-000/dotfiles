@@ -8,16 +8,11 @@ plugins=(
     zsh-autosuggestions
     zsh-syntax-highlighting
 )
-. $ZSH/oh-my-zsh.sh
-
-# set shortcut
-alias git='hub'
-alias here='basename `pwd`'
+source $ZSH/oh-my-zsh.sh
 
 # set user environment
 export TERM=xterm-256color
 export GOPATH=$HOME/.go
-export PATH=/opt/golang/bin:$PATH
+export PATH=/opt/go/bin:$PATH
 export PATH=$GOPATH/bin:$PATH
 export PATH=$HOME/.npm-packages/bin:$PATH
-export PATH=/opt/postman:$PATH
