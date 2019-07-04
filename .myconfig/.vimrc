@@ -5,6 +5,4 @@ set expandtab
 set t_Co=256
 set autoindent
 set encoding=utf8
-set listchars=eol:$
-set list
 syntax enable
