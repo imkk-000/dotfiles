@@ -16,7 +16,7 @@ sudo apt-get install -y wget curl xclip traceroute whois ufw tree \
                         xinput network-manager-openvpn-gnome \
                         zsh tmux vim gnome-tweak-tool dconf-editor \
                         gufw gparted htop p7zip-full software-properties-common \
-                        unzip zip nmap
+                        unzip zip nmap gnome-panel
 sudo apt-get install -y $(check-language-support)
 
 # install vscode
