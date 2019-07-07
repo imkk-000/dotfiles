@@ -10,7 +10,7 @@ sudo apt-get update && sudo apt-get upgrade -y
 
 # install tools
 sudo apt-get install -y git-core
-sudo apt-get install -y gcc g++ python make cmake autoconf python-pip
+sudo apt-get install -y gcc g++ python python3 openjdk-11-jdk make cmake autoconf python-pip
 sudo apt-get install -y wget curl xclip traceroute whois ufw tree \
                         net-tools dirmngr apt-transport-https ca-certificates \
                         xinput network-manager-openvpn-gnome \
