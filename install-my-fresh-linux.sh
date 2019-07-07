@@ -68,7 +68,7 @@ sudo mv /opt/go /opt/golang
 mkdir -p $HOME/.icons \
          $HOME/.themes \
          $HOME/.local/share/fonts \
-         $HOME/.local/gnome-shell/extensions \
+         $HOME/.local/share/gnome-shell/extensions \
          $HOME/.npm-packages \
          $HOME/.go \
          $HOME/.ssh \
