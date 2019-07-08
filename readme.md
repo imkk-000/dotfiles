@@ -14,9 +14,9 @@
 - [x] G++
 - [x] Golang
 - [x] Node
-- [ ] Java
-- [ ] Python
-- [ ] Python 3
+- [x] Java
+- [x] Python
+- [x] Python 3
 
 ## Additional Tools
 
