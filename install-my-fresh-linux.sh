@@ -72,10 +72,7 @@ mkdir -p $HOME/.icons \
          $HOME/.npm-packages \
          $HOME/.go \
          $HOME/.ssh \
-         $HOME/.vim
-mkdir -p $HOME/Documents/linux \
-         $HOME/Documents/golang \
-         $HOME/Documents/node \
+         $HOME/.vim \
          $HOME/Pictures/Profiles
 
 # install papirus-icon
