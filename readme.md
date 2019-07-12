@@ -14,6 +14,7 @@
 - [x] G++
 - [ ] Golang
 - [ ] Node
+- [x] Dotnet-core
 - [x] Java
 - [x] Python
 - [x] Python 3

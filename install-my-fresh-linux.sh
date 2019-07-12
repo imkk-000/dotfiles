@@ -11,7 +11,7 @@ sudo apt upgrade -y
 sudo apt install -y git-core \
                     gcc g++ python python3 openjdk-11-jdk make cmake autoconf python-pip \
                     wget curl xclip traceroute whois ufw tree \
-                    net-tools dirmngr apt-transport-https ca-certificates \
+                    net-tools dirmngr gnupg2 apt-transport-https ca-certificates \
                     xinput network-manager-openvpn-gnome \
                     zsh tmux vim gnome-tweak-tool dconf-editor \
                     gufw gparted htop p7zip-full software-properties-common \
@@ -24,6 +24,12 @@ echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" 
       | sudo tee /etc/apt/sources.list.d/vscode.list
 sudo apt update
 sudo apt install -y code
+
+# install dotnet-core, can use key from install vscode stable
+echo "deb [arch=amd64] https://packages.microsoft.com/debian/10/prod buster main" \
+      | sudo tee /etc/apt/sources.list.d/microsoft-prod.list
+sudo apt-get update
+sudo apt-get install -y dotnet-sdk-2.2
 
 # install docker-ce and docker-compose
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
