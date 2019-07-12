@@ -28,5 +28,5 @@
 - [ ] Virtualbox
 - [ ] Postman
 - [ ] Intellij IDEA
-- [ ] Slack
+- [x] Slack
 - [ ] Discord

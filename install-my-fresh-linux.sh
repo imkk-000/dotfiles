@@ -40,6 +40,13 @@ echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" \
 sudo apt update
 sudo apt install -y google-chrome-stable
 
+# install slack
+curl -fsSL https://packagecloud.io/slacktechnologies/slack/gpgkey | sudo apt-key add -
+echo "deb https://packagecloud.io/slacktechnologies/slack/debian/ jessie main" \
+      | sudo tee /etc/apt/sources.list.d/slack.list
+sudo apt update
+sudo apt install -y slack-desktop
+
 # install spotify-client
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90
 echo "deb [arch=amd64] http://repository.spotify.com stable non-free" \
