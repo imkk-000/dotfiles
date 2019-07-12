@@ -12,19 +12,20 @@
 
 - [x] GCC
 - [x] G++
-- [x] Golang
-- [x] Node
+- [ ] Golang
+- [ ] Node
 - [x] Java
 - [x] Python
 - [x] Python 3
 
 ## Additional Tools
 
-- [x] Visual Studio Code
-- [x] Google Chrome
-- [x] Virtualbox
-- [x] Spotify
+- [x] Visual Studio Code Stable
+- [x] Google Chrome Stable
+- [ ] Firefox (Official)
 - [x] Docker CE
+- [x] Spotify
+- [ ] Virtualbox
 - [ ] Postman
 - [ ] Intellij IDEA
 - [ ] Slack
